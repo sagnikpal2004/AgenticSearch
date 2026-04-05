@@ -1,0 +1,4 @@
+openrouter
+requests
+gradio
+bs4
