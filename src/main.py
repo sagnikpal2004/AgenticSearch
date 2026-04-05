@@ -53,7 +53,7 @@ def pipeline(x, N=3, M=5, O=5):
 
         if not any_progress:
             break
-
+    print("scraping completed")
 
     schema = schema_gen(scrapes, x, O)
 

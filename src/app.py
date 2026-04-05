@@ -44,8 +44,16 @@ def table_to_html(table):
     return html
 
 def run_pipeline(query):
+    yield "<p><b>🔄 Starting pipeline...</b></p>"
+
+    step = 1
     for table in pipeline(query):
-        yield table_to_html(table)
+        html = f"<p><b>🔄 Processing step {step}...</b></p>"
+        html += table_to_html(table)
+        step += 1
+        yield html
+
+    yield "<p><b>✅ Done!</b></p>" + table_to_html(table)
 
 with gr.Blocks() as demo:
     gr.Markdown("# Agentic Search System")

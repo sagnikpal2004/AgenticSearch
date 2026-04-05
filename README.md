@@ -1,3 +1,14 @@
+---
+title: Agentic Search
+emoji: 🔍
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "4.44.0"
+app_file: app.py
+pinned: false
+---
+
 # AgenticSearch
 
 AgenticSearch is a multi-step web research pipeline that turns a natural-language question into a structured, source-backed table of entities. It combines query planning, web search, scraping, schema inference, and entity extraction into one streaming workflow.
